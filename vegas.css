@@ -1,0 +1,224 @@
+	body{
+	font-family: 'Calistoga', cursive;
+	background-color: black;
+	text-shadow: 
+}
+.stars, .twinkling{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:20%;
+  display:block;
+}
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:0;
+}
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:1;
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+.cover{
+	background: url("vegas.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	 position:absolute;
+	 top:20%;
+	 left:0;
+	 right:0;
+	 bottom:0;
+	 display:block;
+}
+.main{
+	color: #ebf2f2;
+	position: relative;
+	z-index: 1;
+	margin: 0 auto;
+	width: 60%;
+	text-shadow: 2px 2px 3px #E5E4E2;
+	border-color: #E5E4E2;
+	text-align: center;
+
+}
+.frame{
+	border-style: solid;
+	margin: 0 auto;
+	text-align: center;
+		text-shadow: 2px 2px black;
+		padding: 0.5%;
+	letter-spacing: 0.4%;
+}
+.platinum{
+	font-size: 120%;
+	margin: 0 auto;
+	margin-bottom: 5%;
+	width: 100%;
+	}
+.gold{	
+	font-size: 100%;
+	margin: 0 auto;
+	width: 85%;
+}
+.silver{
+	font-size: 80%;
+	margin: 0 auto;
+	width: 75%;
+}
+.bronze{
+	font-size: 70%;
+	margin: 0 auto;
+	width: 65%;
+}
+.holder{
+	width: 100%;
+	display: inline-block;
+}
+.number{
+	text-shadow: none;
+	font-size: 200%;
+	float: left;
+	margin-top: 1.75%;
+	width: 7%;
+	height: 100%;
+	border-bottom: 3px  #BF953F solid;
+	border-right: 3px  #BF953F solid;
+	border-top:none;
+	border-left: none;
+	background-color: rgba(235, 199, 120, 0.25);
+	border-bottom-right-radius: 20%;
+
+}
+.central{
+	font-family: 'Fredericka the Great', cursive;
+	border-image: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C) 10 round;
+	font-size: 280%;
+	box-shadow:
+    -10px 0   10px 10px rgba(163, 128, 33, 0.3),
+    10px  0   10px 10px rgba(163, 128, 33, 0.3); 
+	background-color: rgba(1,1,1, 0.7);
+}
+.type{
+	margin-top: 5%;
+	border-color: #BF953F;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	font-size: 125%;
+	border-bottom: none;
+	width: 40%;
+	 box-shadow:
+    -10px 0   10px 10px rgba(163, 128, 33, 0.3),
+    10px  0   10px 10px rgba(163, 128, 33, 0.3); 
+		}
+.min{
+	border-color: #BF953F;
+	border-top: none;
+	border-bottom-right-radius: 20px; 
+	border-bottom-left-radius: 20px;
+	font-size: 100%;
+	width: 40%;
+	padding: 0.5%;
+	 box-shadow:
+    -10px 0   10px 10px rgba(163, 128, 33, 0.3),
+    10px  0   10px 10px rgba(163, 128, 33, 0.3); 
+}		
+.platinum .type, .platinum .min{
+	background-color: rgba(229, 228, 226, 0.7);
+}
+.gold .type, .gold .min{
+	background-color: rgba(74, 61, 24, 0.9);
+
+}
+.silver .type, .silver .min{
+	background-color: rgba(192,192,192, 0.6);
+}
+.bronze .type, .bronze .min{
+	background-color: rgba(205, 127, 50, 0.5);
+}
+.bronze .holder .central{
+border-width: 12px;
+letter-spacing: 20px;
+}
+.silver .holder .central{
+border-width: 16px;
+letter-spacing: 30px;
+}
+.gold .holder .central{		
+border-width: 19px;
+letter-spacing: 40px;
+}
+.platinum .holder .central{
+border-width: 22px;
+letter-spacing: 50px;
+}
+.visible{
+visibility: visible;
+opacity: 1;
+transition: opacity 2s linear;
+}                
+.hidden
+{
+visibility: hidden;
+opacity: 0;
+transition: visibility 0s 2s, opacity 2s linear;
+}                
+#win, #win2{
+	 width: 100%;
+  color: #c79220;
+text-shadow: -1px -1px 5px gold,
+			1px 1px 4px black;
+}
+#win{	
+	margin-top: 20%;
+  font-size: 350%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#win2{
+	font-size: 500%;
+	margin-top: 10%;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, -1px, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 2px, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, -1px, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 1px, 0);
+  }
+}
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@keyframes type{ 
+  from { width: 0; } 
+} 
+           
