@@ -36,7 +36,7 @@
 			e.style.width = "100%";
 			e.style.fontSize= "1.5rem";
 			e.style.transform = "translate3d(0, 0, 0)";
-			e.style.animation = "shake 0.68s cubic-bezier(.36,.07,.19,.97) infinite";
+			e.style.animation = "shake 0.92s cubic-bezier(.36,.07,.19,.97) infinite";
 			clicked = 1;
 			}
 		
